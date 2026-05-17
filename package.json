@@ -1,6 +1,6 @@
 {
   "name": "dam-status-api",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The official TypeScript library for the Dam Status API API",
   "author": "Dam Status API <>",
   "types": "dist/index.d.ts",
