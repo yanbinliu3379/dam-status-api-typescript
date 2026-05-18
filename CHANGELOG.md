@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.0.3 (2026-05-18)
+
+Full Changelog: [v0.0.2...v0.0.3](https://github.com/yanbinliu3379/dam-status-api-typescript/compare/v0.0.2...v0.0.3)
+
+### Chores
+
+* configure new SDK language ([da23c60](https://github.com/yanbinliu3379/dam-status-api-typescript/commit/da23c60b10c8ac3a996580535ef45ff74e87b6dd))
+
 ## 0.0.2 (2026-05-18)
 
 Full Changelog: [v0.0.1...v0.0.2](https://github.com/yanbinliu3379/dam-status-api-typescript/compare/v0.0.1...v0.0.2)
