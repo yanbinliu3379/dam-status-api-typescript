@@ -323,22 +323,21 @@ describe('instantiate client', () => {
     });
 
     test('empty env variable should throw or fallback explicitly', () => {
-  process.env['DAM_STATUS_API_BASE_URL'] = '';
+      process.env['DAM_STATUS_API_BASE_URL'] = '';
   
-  // If your strategy is to fail fast (Recommended):
-  expect(() => new DamStatusAPI({ apiKey: 'My API Key' })).toThrow();
-  
-  // OR, if Stainless generated a fallback block, it should be verified intentionally:
-  // const client = new DamStatusAPI({ apiKey: 'My API Key' });
-  // expect(client.baseURL).toEqual('https://My-Sc-Dam');
-});
-
-test('blank env variable should be trimmed or rejected', () => {
-  process.env['DAM_STATUS_API_BASE_URL'] = '   ';
-  
-  // A blank string should never silently resolve to a valid production URL baseline
-  expect(() => new DamStatusAPI({ apiKey: 'My API Key' })).toThrow(/Invalid URL/);
-});
+      // If your strategy is to fail fast (Recommended):
+      expect(() => new DamStatusAPI({ apiKey: 'My API Key' })).toThrow();
+      
+      // OR, if Stainless generated a fallback block, it should be verified intentionally:
+      // const client = new DamStatusAPI({ apiKey: 'My API Key' });
+      // expect(client.baseURL).toEqual('https://My-Sc-Dam');
+    });
+    test('blank env variable should be trimmed or rejected', () => {
+      process.env['DAM_STATUS_API_BASE_URL'] = '   ';
+      
+      // A blank string should never silently resolve to a valid production URL baseline
+      expect(() => new DamStatusAPI({ apiKey: 'My API Key' })).toThrow(/Invalid URL/);
+    });
   });
 
   test('maxRetries option is correctly set', () => {
