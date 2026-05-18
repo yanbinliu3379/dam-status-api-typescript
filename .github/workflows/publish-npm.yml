@@ -32,4 +32,6 @@ jobs:
         run: |
           bash ./bin/publish-npm
         env:
-          NPM_TOKEN: ${{ secrets.DAM_STATUS_API_NPM_TOKEN || secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{secrets.NPM_TOKEN }}
+          TEST_BASE_URL: ${{ secrets.TEST_BASE_URL }}
+          TEST_API_KEY: ${{ secrets.TEST_API_KEY }}
