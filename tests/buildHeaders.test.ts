@@ -1,5 +1,5 @@
 import { inspect } from 'node:util';
-import { buildHeaders, type HeadersLike, type NullableHeaders } from 'dam-status-api/internal/headers';
+import { buildHeaders, type HeadersLike, type NullableHeaders } from 'poc-dam-status-api/internal/headers';
 
 function inspectNullableHeaders(headers: NullableHeaders) {
   return `NullableHeaders {${[
