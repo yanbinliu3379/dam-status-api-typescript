@@ -1,6 +1,6 @@
 import fs from 'fs';
-import type { ResponseLike } from 'dam-status-api/internal/to-file';
-import { toFile } from 'dam-status-api/core/uploads';
+import type { ResponseLike } from 'poc-dam-status-api/internal/to-file';
+import { toFile } from 'poc-dam-status-api/core/uploads';
 import { File } from 'node:buffer';
 
 class MyClass {
@@ -97,7 +97,7 @@ describe('missing File error message', () => {
   });
 
   test('is thrown', async () => {
-    const uploads = await import('dam-status-api/core/uploads');
+    const uploads = await import('poc-dam-status-api/core/uploads');
     await expect(
       uploads.toFile(mockResponse({ url: 'https://example.com/my/audio.mp3' })),
     ).rejects.toMatchInlineSnapshot(

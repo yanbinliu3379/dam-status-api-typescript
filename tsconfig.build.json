@@ -5,8 +5,8 @@
   "compilerOptions": {
     "rootDir": "./dist/src",
     "paths": {
-      "dam-status-api/*": ["./dist/src/*"],
-      "dam-status-api": ["./dist/src/index.ts"]
+      "poc-dam-status-api/*": ["./dist/src/*"],
+      "poc-dam-status-api": ["./dist/src/index.ts"]
     },
     "noEmit": false,
     "declaration": true,

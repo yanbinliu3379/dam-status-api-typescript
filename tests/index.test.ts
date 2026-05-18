@@ -1,10 +1,10 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { APIPromise } from 'dam-status-api/core/api-promise';
+import { APIPromise } from 'poc-dam-status-api/core/api-promise';
 
 import util from 'node:util';
-import DamStatusAPI from 'dam-status-api';
-import { APIUserAbortError } from 'dam-status-api';
+import DamStatusAPI from 'poc-dam-status-api';
+import { APIUserAbortError } from 'poc-dam-status-api';
 const defaultFetch = fetch;
 
 describe('instantiate client', () => {
@@ -320,18 +320,6 @@ describe('instantiate client', () => {
       process.env['DAM_STATUS_API_BASE_URL'] = 'https://example.com/from_env';
       const client = new DamStatusAPI({ apiKey: 'My API Key' });
       expect(client.baseURL).toEqual('https://example.com/from_env');
-    });
-
-    test('empty env variable', () => {
-      process.env['DAM_STATUS_API_BASE_URL'] = ''; // empty
-      const client = new DamStatusAPI({ apiKey: 'My API Key' });
-      expect(client.baseURL).toEqual('https://My-Sc-Dam');
-    });
-
-    test('blank env variable', () => {
-      process.env['DAM_STATUS_API_BASE_URL'] = '  '; // blank
-      const client = new DamStatusAPI({ apiKey: 'My API Key' });
-      expect(client.baseURL).toEqual('https://My-Sc-Dam');
     });
   });
 

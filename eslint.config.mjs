@@ -22,7 +22,7 @@ export default tseslint.config(
         {
           patterns: [
             {
-              regex: '^dam-status-api(/.*)?',
+              regex: '^poc-dam-status-api(/.*)?',
               message: 'Use a relative import, not a package import.',
             },
           ],

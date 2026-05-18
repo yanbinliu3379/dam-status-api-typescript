@@ -7,8 +7,8 @@ const config: JestConfigWithTsJest = {
     '^.+\\.(t|j)sx?$': ['@swc/jest', { sourceMaps: 'inline' }],
   },
   moduleNameMapper: {
-    '^dam-status-api$': '<rootDir>/src/index.ts',
-    '^dam-status-api/(.*)$': '<rootDir>/src/$1',
+    '^poc-dam-status-api$': '<rootDir>/src/index.ts',
+    '^poc-dam-status-api/(.*)$': '<rootDir>/src/$1',
   },
   modulePathIgnorePatterns: [
     '<rootDir>/ecosystem-tests/',
