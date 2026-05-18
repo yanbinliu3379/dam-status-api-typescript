@@ -1,10 +1,10 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { APIPromise } from 'dam-status-api/core/api-promise';
+import { APIPromise } from 'poc-dam-status-api/core/api-promise';
 
 import util from 'node:util';
-import DamStatusAPI from 'dam-status-api';
-import { APIUserAbortError } from 'dam-status-api';
+import DamStatusAPI from 'poc-dam-status-api';
+import { APIUserAbortError } from 'poc-dam-status-api';
 const defaultFetch = fetch;
 
 describe('instantiate client', () => {

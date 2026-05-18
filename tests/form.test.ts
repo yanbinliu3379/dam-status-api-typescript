@@ -1,5 +1,5 @@
-import { multipartFormRequestOptions, createForm } from 'dam-status-api/internal/uploads';
-import { toFile } from 'dam-status-api/core/uploads';
+import { multipartFormRequestOptions, createForm } from 'poc-dam-status-api/internal/uploads';
+import { toFile } from 'poc-dam-status-api/core/uploads';
 
 describe('form data validation', () => {
   test('valid values do not error', async () => {

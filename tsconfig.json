@@ -8,8 +8,8 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "paths": {
-      "dam-status-api/*": ["./src/*"],
-      "dam-status-api": ["./src/index.ts"]
+      "poc-dam-status-api/*": ["./src/*"],
+      "poc-dam-status-api": ["./src/index.ts"]
     },
     "noEmit": true,
 

@@ -1,4 +1,4 @@
-import { createPathTagFunction, encodeURIPath } from 'dam-status-api/internal/utils/path';
+import { createPathTagFunction, encodeURIPath } from 'poc-dam-status-api/internal/utils/path';
 import { inspect } from 'node:util';
 import { runInNewContext } from 'node:vm';
 
