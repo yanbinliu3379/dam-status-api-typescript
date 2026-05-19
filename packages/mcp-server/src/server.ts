@@ -28,7 +28,7 @@ export const newMcpServer = async ({
   new McpServer(
     {
       name: 'poc_dam_status_api_api',
-      version: '0.0.3',
+      version: '0.0.4',
     },
     {
       instructions: await getInstructions({ stainlessApiKey, customInstructionsPath }),

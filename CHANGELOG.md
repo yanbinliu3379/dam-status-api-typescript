@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.0.4 (2026-05-19)
+
+Full Changelog: [v0.0.3...v0.0.4](https://github.com/yanbinliu3379/dam-status-api-typescript/compare/v0.0.3...v0.0.4)
+
+### Bug Fixes
+
+* **typescript:** upgrade tsc-multi so that it works with Node 26 ([5aa50c3](https://github.com/yanbinliu3379/dam-status-api-typescript/commit/5aa50c33a058f36694ad8b9ec4d5f1f2f16b73e9))
+
+
+### Chores
+
+* **tests:** remove redundant File import ([8fedf65](https://github.com/yanbinliu3379/dam-status-api-typescript/commit/8fedf65ae43780325bf80d3b475caf01ebf524c5))
+
 ## 0.0.3 (2026-05-18)
 
 Full Changelog: [v0.0.2...v0.0.3](https://github.com/yanbinliu3379/dam-status-api-typescript/compare/v0.0.2...v0.0.3)
