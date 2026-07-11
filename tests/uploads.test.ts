@@ -1,7 +1,6 @@
 import fs from 'fs';
 import type { ResponseLike } from 'poc-dam-status-api/internal/to-file';
 import { toFile } from 'poc-dam-status-api/core/uploads';
-import { File } from 'node:buffer';
 
 class MyClass {
   name: string = 'foo';
